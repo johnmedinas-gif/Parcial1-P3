@@ -1,4 +1,4 @@
-# Integrantes: <John Edward Medina>, <Daniel Montes Villan>, <Juan Pablo Londoño Cardenas>
+# Integrantes: <John Edward Medina>, <Daniel Felipe Montes Villán>, <Juan Pablo Londoño Cardenas>
 #
 # Módulo Datos
 # ------------
