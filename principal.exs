@@ -36,6 +36,7 @@ defmodule Principal do
     # Medición con :timer.tc/1: se mide el tiempo de cómputo y de impresión
     # de los ocho reportes sobre el conjunto final de entregas (el que ya
     # incluye la entrega adicional, si fue válida).
+    {tiempo_microsegundos, _resultado} =
       :timer.tc(fn -> generar_reportes(productores, tanques, validas, rechazadas) end)
 
     EntradaSalida.mostrar("\n(Los 8 reportes se generaron en #{tiempo_microsegundos} microsegundos.)")
