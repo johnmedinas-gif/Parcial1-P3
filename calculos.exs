@@ -5,8 +5,8 @@
 # descuento de transporte y liquidación final por productor.
 #
 # Los parámetros del negocio están definidos como atributos de módulo,
-# tal como lo pide el enunciado, para que estén centralizados y sea claro
-# de dónde sale cada cifra usada en los cálculos.
+# para que estén centralizados y sea claro de dónde sale cada cifra
+# usada en los cálculos.
 defmodule Calculos do
   @tarifa_base 1800
   @meta_diaria 2000

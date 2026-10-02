@@ -78,8 +78,7 @@ defmodule EntradaSalida do
   end
 
   # litros y grasa pueden llegar como enteros o decimales; Float.parse
-  # acepta ambos formatos ("320" y "320.5"), así que basta con validar
-  # que no sobre texto después del número.
+  # acepta ambos formatos ("320" y "320.5")
   defp convertir_numero(texto) do
     case Float.parse(String.trim(texto)) do
       {valor, ""} -> {:ok, valor}

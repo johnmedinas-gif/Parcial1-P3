@@ -13,11 +13,6 @@
 #     `ingresar(pregunta, :boolean)` y las variantes
 #     `ingresar(pregunta, :coleccion_*)`.
 #
-# Este proyecto no necesita esas funciones: la entrega adicional se lee
-# una sola vez con un formato de texto fijo (ver EntradaSalida en
-# entrada_salida.exs), y el código de productor también se pide una sola
-# vez, sin reintentos, tal como lo exige el enunciado.
-#
 # Para compilar este archivo junto con el resto del proyecto:
 #   elixirc Util2.ex
 # (genera Elixir.Util2.beam en la misma carpeta).

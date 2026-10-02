@@ -7,8 +7,8 @@
 # neto) la usa directamente, y cualquier otro reporte que necesite un
 # "top N" también podría reutilizarla.
 #
-# El ordenamiento interno se delega en `Util2.ordenar/3` (visto en clase,
-# compilado aparte con `elixirc Util2.ex`), que es un envoltorio directo
+# El ordenamiento interno se delega en `Util2.ordenar/3`
+# (compilado aparte con `elixirc Util2.ex`), que es un envoltorio directo
 # sobre `Enum.sort_by/3`.
 defmodule Ranking do
   @doc """

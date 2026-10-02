@@ -3,8 +3,7 @@
 # Módulo Datos
 # ------------
 # Contiene el conjunto de datos de prueba del grupo para el parcial del
-# centro de acopio de leche. Se entregan como listas de mapas, tal como lo
-# exige el enunciado, porque así llegan "desde las planillas": una lista de
+# centro de acopio de leche. Se entregan como listas de mapas, una lista de
 # registros sin estructura adicional. La responsabilidad de transformarlos
 # a otras colecciones (mapas indexados, mapas agrupados, etc.) es de los
 # módulos que los consumen (Validaciones, Calculos, Reportes), no de este
@@ -46,12 +45,6 @@ defmodule Datos do
   # 80 entregas válidas + 10 entregas inválidas (2 por motivo de rechazo),
   # mezcladas para simular la llegada real de las planillas.
   #
-  # Notas sobre casos especiales incluidos a propósito:
-  #   - P01 tiene entregas válidas en los 4 tanques (para el reporte R8).
-  #   - P02 tiene 3 entregas (700 l al 2.0%, 50 l al 5.0%, 50 l al 5.0%) que
-  #     evidencian la diferencia entre el promedio simple de grasa (4.0%) y
-  #     el promedio ponderado por litros (2.375%), usada en la explicación
-  #     de R6 (ver documento).
   #   - Las 10 entregas inválidas cubren, dos veces cada uno, los motivos:
   #     :productor_desconocido, :tanque_desconocido, :dia_invalido,
   #     :litros_fuera_de_rango y :porcentaje_invalido; cada una viola

@@ -1,9 +1,8 @@
 # Módulo Validaciones
 # --------------------
-# Valida una entrega contra las 5 reglas de negocio, EXACTAMENTE en el
-# orden indicado en el enunciado, reportando solo el primer motivo de
-# rechazo encontrado. Se usa `with` para encadenar las verificaciones,
-# tal como lo exige la Parte B: cada cláusula solo continúa a la
+# Valida una entrega contra las 5 reglas de negocio, reportando solo el
+# primer motivo derechazo encontrado. Se usa `with` para encadenar las
+# verificaciones, cada cláusula solo continúa a la
 # siguiente si la anterior fue exitosa (patrón `:ok <- ...`); en cuanto
 # una falla, `with` salta directo a la rama `else` con el motivo
 # correspondiente, sin evaluar las reglas restantes.
@@ -13,7 +12,7 @@
 # conjunto (`MapSet.member?/2`) es O(1) frente a recorrer la lista con
 # `Enum.any?/2` en cada una de las validaciones; con pocas decenas de
 # productores no es indispensable, pero es la estructura correcta para
-# esta operación y se justifica en el documento de diseño (Parte A).
+# esta operación.
 defmodule Validaciones do
   @doc """
   Valida una entrega. `productores_validos` y `tanques_validos` deben ser
